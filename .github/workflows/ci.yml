@@ -17,7 +17,7 @@ name: ci
 
 on:
   pull_request:
-  push:
+  push: #run on macos
 
 jobs:
   build:
