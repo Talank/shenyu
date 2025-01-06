@@ -18,15 +18,13 @@ name: ci
 on:
   pull_request:
   push:
-    branches:
-      - master
 
 jobs:
   build:
     strategy:
       matrix:
         java: [ 17 ]
-        os: [ ubuntu-latest, windows-latest ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
         include:
           - java: 17
             os: ubuntu-latest
